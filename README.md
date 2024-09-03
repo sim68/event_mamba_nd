@@ -32,16 +32,26 @@ Ensure you have all dependencies installed, available in the file *environnement
 ## Results
 Our adapted MambaND model has shown improved performance on event-based datasets compared to traditional methods, particularly in capturing the spatio-temporal dynamics inherent in event data specially on the HMDB51-DVS dataset. 
 
+Performance summary table :
+
+| Dataset        | Modèle   | Architecture | Paramètres | Top1-Acc |
+|----------------|----------|--------------|------------|----------|
+| CIFAR-10       | Mamba2D  | Mamba        | 7 M        | 91%      |
+| CIFAR10-DVS    | Mamba2D  | Mamba        | 7 M        | 73%      |
+| Tiny Imagenet  | Mamba2D  | Mamba        | 16 M       | 63%      |
+| HMDB-51        | Mamba3D  | Mamba        | 36 M       | 59%      |
+| HMDB51-DVS     | Mamba3D  | Mamba        | 36 M       | 68%      |
+
 
 ## Acknowledgments
 
 We would like to thank the original authors of the MambaND architecture for their groundbreaking work and for providing inspiration for this adaptation. The original MambaND paper is published by :
 
-@article{Li2024MambaND,
-  title={Mamba-ND: Generalized State Space Models for Multi-Dimensional Data},
-  author={Li, Xiaoxuan and others},
-  journal={arXiv preprint arXiv:2404.12345},
-  year={2024}
-}
+> @article{Li2024MambaND,  
+> &nbsp;&nbsp;&nbsp;&nbsp;title={Mamba-ND: Generalized State Space Models for Multi-Dimensional Data},  
+> &nbsp;&nbsp;&nbsp;&nbsp;author={Li, Xiaoxuan and others},  
+> &nbsp;&nbsp;&nbsp;&nbsp;journal={arXiv preprint arXiv:2404.12345},  
+> &nbsp;&nbsp;&nbsp;&nbsp;year={2024}  
+> }
 
 
